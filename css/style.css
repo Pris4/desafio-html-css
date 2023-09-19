@@ -1,0 +1,312 @@
+:root {
+    --cor-primaria: #101828;
+    --cor-secundaria: #667085;
+    --cor-terciaria: #8E2424;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav .texto-logo {
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: #3A404E;
+}
+
+nav .links a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+nav .logo-branco {
+    padding: 1rem 2rem;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+button {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: none;
+    color: var(--cor-secundaria);
+    font-size: 0.9rem;
+}
+
+button.cadastrar {
+    background-color: var(--cor-terciaria);
+    color: #FFF;
+}
+
+header {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+header span {
+    color: var(--cor-terciaria);
+    font-weight: 600;
+}
+
+header h1 {
+    color: var(--cor-primaria);
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0 2rem;
+}
+
+header p {
+    padding-top: 0.75rem;
+    max-width: 55%;
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+main {
+    padding: 0 5rem 6rem;
+}
+
+.primeiraSecao {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 2rem 6rem;
+    gap: 2rem;
+}
+
+.primeiraSecao .metricas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 17.5rem;
+    gap: 1.25rem;
+}
+
+.primeiraSecao .metricas .titulosNumericos {
+    color: var(--cor-terciaria);
+    font-size: 3.75rem;
+    font-weight: 600;
+}
+
+.primeiraSecao .metricas .subtitulo {
+    color: var(--cor-primaria);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.primeiraSecao .metricas p {
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.vagas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 2rem;
+    gap: 4rem;
+}
+
+.vagas .talentos {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.vagas .talentos span {
+    color: var(--cor-terciaria);
+    font-size: 0.88rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 1rem;
+    line-height: 1.25rem;
+    background: rgba(142, 36, 36, 0.05);
+}
+
+.vagas .talentos h2 {
+    color: var(--cor-primaria);
+    letter-spacing: -0.72px;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.vagas .talentos p {
+    color: var(--cor-secundaria);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    margin-bottom: 2.75rem;
+}
+
+.vagasAbertas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 48rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--cor-primaria);
+}
+
+.vaga {
+    display: flex;    
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 1.5rem 1.75rem 1.5rem;
+    gap: 2rem;
+    align-self: stretch;
+    border-radius: 1rem;
+    border: 1px solid #EAECF0;
+}
+
+.tituloVaga {
+    color: var(--cor-primaria);
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+}
+
+.informacoes {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.depoimentos {
+    display: flex;
+    padding: 4rem 6rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 1rem;
+    background: rgba(195, 25, 25, 0.03);
+}
+
+.depoimentos__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.depoimentos__info span {
+    color: var(--cor-terciaria);
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
+
+.depoimentos__info h2 {
+    color: var(--cor-primaria);
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 2.75rem;
+    letter-spacing: -0.72px;
+    text-align: center;
+}
+
+.depoimentos__info .depoimentos__info__nome {
+    color: var(--cor-primaria);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.depoimentos__info .depoimentos__info__cargo {
+    color: var(--cor-secundaria);
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 6rem 0rem;
+    background: #F9FAFB;
+}
+
+.cabecalho__rodape__titulo {
+    color: var(--cor-primaria);
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: -0.72px;
+}
+
+.cabecalho__rodape__paragrafo {
+    color: var(--cor-secundaria);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    margin-top: -0.75rem;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.formulario .email {
+    padding: 0.75rem 0.88rem 0.75rem 1rem;
+    width: 22.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #D0D5DD;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.copyright {
+    color: #98A2B3;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
